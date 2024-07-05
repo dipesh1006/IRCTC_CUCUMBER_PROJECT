@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import RunnerPack.BaseClass;
-import io.cucumber.java.AfterStep;
+import io.cucumber.java.*;
 import io.cucumber.java.Scenario;
 
 public class HooksUtils {

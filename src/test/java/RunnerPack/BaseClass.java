@@ -27,16 +27,20 @@ public class BaseClass {
 	String propfile = System.getProperty("user.dir")+"/src/test/resources/test_property.properties";
 	
 	 public BaseClass() {
-	        prop = new Properties();
-	        try {
-	            prop.load(new FileInputStream(propfile));
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
+
+		 		prop = new Properties();
+		        try {
+		            prop.load(new FileInputStream(propfile));
+		        } catch (IOException e) {
+		            e.printStackTrace();
+		        }
+
+	        
 	    }
 	
 	public WebDriver getDriver()
 	{
+		System.out.println("Driver from Base "+driver);
 		if(driver==null)
 		{
 			System.out.println("Hi Champ, Driver is null here");
