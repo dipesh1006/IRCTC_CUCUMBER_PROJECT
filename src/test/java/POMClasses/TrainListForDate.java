@@ -1,12 +1,17 @@
 package POMClasses;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import RunnerPack.BaseClass;
 
@@ -30,6 +35,10 @@ public class TrainListForDate {
 	
 	@FindBy(xpath="//app-train-avl-enq / div [@class='ng-star-inserted'] / div [5] / div / table / tr / td [1] / div /div [1]")
 	List<WebElement> trainSleeperclass;
+	
+	@FindBy(xpath="//app-train-avl-enq / div [@class='ng-star-inserted'] / div [5] / div / table / tr / td / div /div [1]")
+	List<WebElement> trainallclass;		
+			
 	
 	@FindBy(xpath="//app-train-avl-enq / div [@class='ng-star-inserted'] / div [7] / div / div [3] / table / tr / td [2] / div /div [1]")
 	List<WebElement> date;
@@ -62,10 +71,28 @@ public class TrainListForDate {
 		return index;
 	}
 	
-	public int choose_Sit_If_Available(int train1index) throws Exception
+	public List<WebElement> refine_Sit_Class_Train(String trainclass)
 	{
-		WebElement train1Sleepr = trainSleeperclass.get(train1index);
-		train1Sleepr.click();
+		List<WebElement> trainchoiceclass = new ArrayList<WebElement>();
+		
+		for(int i=0;i<trainallclass.size();i++)
+		{
+			if(trainallclass.get(i).getText().contains(trainclass))
+			{
+				trainchoiceclass.add(trainallclass.get(i));
+			}
+		}
+		return trainchoiceclass;
+	}
+	
+	public int choose_Sit_If_Available(int train1index, String trainclass) throws Exception
+	{
+		List<WebElement> trainchoiceclass = refine_Sit_Class_Train(trainclass);
+				
+			WebElement train1Sleepr = trainchoiceclass.get(train1index);
+			train1Sleepr.click();
+	
+
 		base.WaitUntilElementInvisible(load);
 		
 		try {
@@ -94,10 +121,18 @@ public class TrainListForDate {
 		
 	}
 	
-	public int compareTrainSitAvailable(int train1index, int train2index)
+	public int compareTrainSitAvailable(int train1index, int train2index,String trainclass)
 	{
-		WebElement train1Sleepr = trainSleeperclass.get(train1index);
-		WebElement train2Sleepr = trainSleeperclass.get(train2index);
+		List<WebElement> trainchoice1class = refine_Sit_Class_Train(trainclass);
+		
+		System.out.println("Train 1 index "+train1index+"Train 2 index "+train2index);
+		
+		WebElement train1Sleepr = trainchoice1class.get(train1index);
+		
+		
+		System.out.println("Train 1 choice array"+trainchoice1class.get(train1index));
+		
+		
 		
 		train1Sleepr.click();
 		base.WaitUntilElementInvisible(load);
@@ -107,6 +142,22 @@ public class TrainListForDate {
 			
 			e.printStackTrace();
 		}
+		
+		
+		
+		WebElement train2Sleepr = trainchoice1class.get(train2index);
+		System.out.println("Train 2 choice array"+trainchoice1class.get(train2index));
+		
+
+		/*try {
+	        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	        wait.until(ExpectedConditions.elementToBeClickable(train2Sleepr)).click();
+	    } catch (ElementClickInterceptedException e) {
+
+	        // Force click using JavaScript
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", train2Sleepr);
+	    }*/
+		
 		train2Sleepr.click();
 		base.WaitUntilElementInvisible(load);
 		try {

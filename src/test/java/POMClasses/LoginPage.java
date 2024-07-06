@@ -44,8 +44,10 @@ public class LoginPage {
 	@FindBy(xpath="//input[@role='searchbox' and @aria-controls ='pr_id_1_list']")
 	WebElement SourceStation;
 	
-	@FindBy(xpath="//li[1] //span[contains(text(),' SEALDAH - SDAH ')]")
-	WebElement namesource;
+	@FindBy(xpath="//div/ul[@role='listbox']/li/span")
+	List<WebElement> sourcelist;
+	
+	//div/ul[@role='listbox']/li/span
 	
 	@FindBy(xpath="//li[1] //span[contains(text(),' NJP')]")
 	WebElement namedest;
@@ -119,19 +121,27 @@ public class LoginPage {
 		base.WaitUntilElementInvisible(load);
 		Actions action = new Actions(driver);
 		Thread.sleep(5000);
+		SourceStation.clear();
 		SourceStation.sendKeys(source);
-		
 		Thread.sleep(4000);
+		for(int i = 0; i< sourcelist.size();i++)
+		{
+			if(sourcelist.get(i).getText().contains(source))
+			{
+				action.sendKeys(Keys.ENTER).build().perform();
+			}
+			else
+			{
+				action.sendKeys(Keys.ARROW_DOWN).build().perform();
+			}
+		}
 		
-		action.sendKeys(Keys.ENTER).build().perform();
 		
-		
-		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		DestStation.sendKeys(dest);
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		action.sendKeys(Keys.ENTER).build().perform();
 		//dropdown1.selectByVisibleText("NEW JALPAIGURI - NJP (NEW JALPAIGURI)");
 		
@@ -172,7 +182,7 @@ public class LoginPage {
 		
 	}
 	
-	public void SelectClass()
+	public void SelectClass(String classes)
 	{
 		WebElement coatch = CoatchClass.get(0);
 		
@@ -183,7 +193,7 @@ public class LoginPage {
 		for(int i=0;i<listofClass.size();i++)
 		{
 			
-			if(listofClass.get(i).getText().contains("Sleeper (SL)"))
+			if(listofClass.get(i).getText().contains(classes))
 			{
 				listofClass.get(i).click();
 				break;

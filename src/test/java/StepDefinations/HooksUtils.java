@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,15 @@ public class HooksUtils {
 		
 		this.driver = base.getDriver();
 		System.out.println("I am in Hook COns, Driver here "+driver);
+	}
+	
+	@Before
+	@After
+	public void clear_all_cookie()
+	{
+		System.out.println("Delete all the cookie");
+		driver.manage().deleteAllCookies();
+      
 	}
 	
 	@AfterStep

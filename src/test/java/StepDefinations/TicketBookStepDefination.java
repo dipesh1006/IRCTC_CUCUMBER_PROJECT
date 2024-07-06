@@ -22,6 +22,7 @@ public class TicketBookStepDefination {
 	BaseClass base;
 	TrainListForDate train;
 	BookingConfirmation bookcnf;
+	String tainclass;
 	
     @Given("User is present in IRCTC Website")
     public void userIsOnLoginPage() {
@@ -55,12 +56,13 @@ public class TicketBookStepDefination {
     	
     }
 
-    @When("Purchase Ticket from {string} to {string} on {string}")
-    public void purchaseTicketFromToOn(String source, String destination, String date) throws InterruptedException {
+    @When("Purchase Ticket from {string} to {string} on {string} and class {string}")
+    public void purchaseTicketFromToOn(String source, String destination, String date, String classes) throws InterruptedException {
     	
+    	this.tainclass = classes;
     	login.fillSourceAndDest(source, destination);
     	login.selectDate(date);
-    	login.SelectClass();
+    	login.SelectClass(classes);
     	login.submitJournyForm();
 
     	
@@ -71,7 +73,7 @@ public class TicketBookStepDefination {
         
     	train = new TrainListForDate(driver);
         int train1Sit = train.findTrain(train1);
-        int index = train.choose_Sit_If_Available(train1Sit);
+        int index = train.choose_Sit_If_Available(train1Sit,tainclass);
         if(index>=0)
         {
         	train.choosTrain();
@@ -93,7 +95,7 @@ public class TicketBookStepDefination {
         
         try
         {
-        	train.compareTrainSitAvailable(train1Sit, train2Sit);
+        	train.compareTrainSitAvailable(train1Sit, train2Sit,tainclass);
         }
         catch(IndexOutOfBoundsException e)
         {
