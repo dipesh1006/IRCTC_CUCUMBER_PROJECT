@@ -9,12 +9,39 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">303,750</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">552,159</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">RunnerPack.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1720288879047</td><td rowspan="3">89423</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">RunnerPack.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1720800794117</td><td rowspan="1">65224</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">RunnerPack.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="5">1720800947743</td><td rowspan="5">89542</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website one special train&quot;</td><td>&quot;Train Ticket Book from IRCTC Website after target one special train&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website one special train&quot;</td><td>&quot;Train Ticket Book from IRCTC Website after target one special train&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website&quot;</td><td>&quot;Train Ticket Book from IRCTC Website&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e1ce14eb5c52e25a41ec1a8042631bd, sendKeysToElement {id=f.0C96A0E8D3411C349F99B60DBF5CB6A1.d.53BA0B2F2C1F7BDEB9A44FE1F0D86E0B.e.305, value=[Ljava.lang.CharSequence;@2506b881}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\HOME\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56322/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2e1ce14eb5c52e25a41ec1a8042631bd)] -&gt; xpath: //input[@role=&apos;searchbox&apos; and @aria-autocomplete=&apos;list&apos;]]
+Session ID: 2e1ce14eb5c52e25a41ec1a8042631bd
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at POMClasses.BookingConfirmation.selectPassengersDetails(BookingConfirmation.java:71)
+	at StepDefinations.TicketBookStepDefination.fillThePassengersDetailsFollowing(TicketBookStepDefination.java:124)
+	at ✽.Fill the passengers details following:(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBook.feature:9)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website&quot;</td><td>&quot;Train Ticket Book from IRCTC Website&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website one special train&quot;</td><td>&quot;Train Ticket Book from IRCTC Website after target one special train&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website one special train&quot;</td><td>&quot;Train Ticket Book from IRCTC Website after target one special train&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website&quot;</td><td>&quot;Train Ticket Book from IRCTC Website&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website one special train&quot;</td><td>&quot;Train Ticket Book from IRCTC Website after target one special train&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
