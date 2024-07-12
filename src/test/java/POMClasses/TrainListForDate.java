@@ -13,13 +13,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import GenericUtils.CommonlyUsedFunc;
+import ProjectManagers.TextContextObject;
 import RunnerPack.BaseClass;
 
 public class TrainListForDate {
 
 	WebDriver driver;
-	BaseClass base;
-	
+	TextContextObject textcontext;
+	CommonlyUsedFunc common;
 	List<WebElement> enablebutton;
 	
 	public TrainListForDate(WebDriver driver) {
@@ -55,9 +57,10 @@ public class TrainListForDate {
 	
 	public int findTrain(String train)
 	{
-		base = new BaseClass();
-		base.SetDriver(driver);
-		base.WaitUntilElementVisible(showtrainbtn);
+		//base = new BaseClass();
+		//base.SetDriver(driver);
+		this.common = new CommonlyUsedFunc(driver);
+		common.WaitUntilElementVisible(showtrainbtn);
 		
 		int index=0;
 		for(int i=0;i<trainnames.size();i++)
@@ -93,7 +96,7 @@ public class TrainListForDate {
 			train1Sleepr.click();
 	
 
-		base.WaitUntilElementInvisible(load);
+			common.WaitUntilElementInvisible(load);
 		
 		try {
 			Thread.sleep(3000);
@@ -135,7 +138,7 @@ public class TrainListForDate {
 		
 		
 		train1Sleepr.click();
-		base.WaitUntilElementInvisible(load);
+		common.WaitUntilElementInvisible(load);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -159,7 +162,7 @@ public class TrainListForDate {
 	    }*/
 		
 		train2Sleepr.click();
-		base.WaitUntilElementInvisible(load);
+		common.WaitUntilElementInvisible(load);
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {

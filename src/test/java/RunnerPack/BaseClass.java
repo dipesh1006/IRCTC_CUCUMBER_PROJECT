@@ -19,13 +19,14 @@ import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import ProjectManagers.TextContextObject;
+
 public class BaseClass {
 
-	public static WebDriver driver;
-	
+	WebDriver driver;
 	Properties prop;
 	String propfile = System.getProperty("user.dir")+"/src/test/resources/test_property.properties";
-	
+	TextContextObject textconxt;
 	 public BaseClass() {
 
 		 		prop = new Properties();
@@ -34,7 +35,6 @@ public class BaseClass {
 		        } catch (IOException e) {
 		            e.printStackTrace();
 		        }
-
 	        
 	    }
 	
@@ -55,11 +55,11 @@ public class BaseClass {
 				case "edge": WebDriverManager.edgedriver().setup();
 				EdgeOptions option = new EdgeOptions();
 				//option.addArguments("--disable-notifications");
-		        driver = new EdgeDriver(option);
+				driver = new EdgeDriver(option);
 		        break;
 			}
 			
-	        driver.manage().window().maximize();
+			driver.manage().window().maximize();
 	       
 		}
 		
@@ -67,35 +67,6 @@ public class BaseClass {
 		return driver;
 	}
 	
-	public void SetDriver(WebDriver driver)
-	{
-		this.driver = driver;
-	}
 	
-	public void LaunchUrl()
-	{
-		//prop = new Properties();
-		driver.get(prop.getProperty("searchurl"));
-	}
-	
-	public void WaitUntilElementVisible(WebElement e)
-	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
-		wait.until(ExpectedConditions.visibilityOf(e));
-	}
-	
-	public void WaitUntilElementInvisible(WebElement e)
-	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
-		System.out.println("We are in Loader");
-		wait.until(ExpectedConditions.invisibilityOf(e));
-	}
-	
-	public void WaitUntilUrlGet(String url)
-	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
-		System.out.println("We are in URL");
-		wait.until(ExpectedConditions.urlContains(url));
-	}
 	
 }

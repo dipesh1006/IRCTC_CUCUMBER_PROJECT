@@ -9,13 +9,15 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import GenericUtils.CommonlyUsedFunc;
+import ProjectManagers.TextContextObject;
 import RunnerPack.BaseClass;
 
 public class BookingConfirmation {
 
-	WebDriver driver;
-	BaseClass base;
-	
+	public WebDriver driver;
+	TextContextObject textcontext;
+	CommonlyUsedFunc common;
 	
 	public BookingConfirmation(WebDriver driver) {
         this.driver = driver;
@@ -45,10 +47,10 @@ public class BookingConfirmation {
 	
 	public void selectPassengersDetails(List<String> passenger)
 	{
-		base = new BaseClass();
-		base.SetDriver(driver);
-		
-		base.WaitUntilElementInvisible(load);
+		//base = new BaseClass();
+		//base.SetDriver(driver);
+		this.common = new CommonlyUsedFunc(driver);
+		common.WaitUntilElementInvisible(load);
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -113,9 +115,9 @@ public class BookingConfirmation {
 	
 	public void reviewAndSubmit()
 	{
-		base.WaitUntilUrlGet("reviewBooking");
-		base.WaitUntilElementInvisible(load);
-		base.WaitUntilElementVisible(review);
+		common.WaitUntilUrlGet("reviewBooking");
+		common.WaitUntilElementInvisible(load);
+		common.WaitUntilElementVisible(review);
 		
 		try {
 			Thread.sleep(12000);

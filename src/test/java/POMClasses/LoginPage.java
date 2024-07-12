@@ -11,12 +11,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import GenericUtils.CommonlyUsedFunc;
+import ProjectManagers.TextContextObject;
 import RunnerPack.BaseClass;
 
 public class LoginPage {
 
 	WebDriver driver;
-	BaseClass base;
+	TextContextObject textcontext;
+	CommonlyUsedFunc common;
 	public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -88,20 +91,21 @@ public class LoginPage {
 	
 	public void launchBrowser()
 	{
-		base = new BaseClass();
-		base.SetDriver(driver);
-		base.LaunchUrl();
-		base.WaitUntilElementInvisible(load);
-		base.WaitUntilElementVisible(header);
+		//base = new BaseClass();
+		//base.SetDriver(driver);
+    	this.common = new CommonlyUsedFunc(driver);
+    	common.LaunchUrl();
+    	common.WaitUntilElementInvisible(load);
+    	common.WaitUntilElementVisible(header);
 		
 	}
 	
 	public void clickLoginToSelectDestination()
 	{
 		loginbtn.click();
-		base.WaitUntilElementVisible(username);
-		base.WaitUntilElementVisible(password);
-		base.WaitUntilElementVisible(sign);
+		common.WaitUntilElementVisible(username);
+		common.WaitUntilElementVisible(password);
+		common.WaitUntilElementVisible(sign);
 	}
 	
 	public void fillUpNameAndPass(String name, String pass)
@@ -118,7 +122,7 @@ public class LoginPage {
 	
 	public void fillSourceAndDest(String source, String dest) throws InterruptedException
 	{
-		base.WaitUntilElementInvisible(load);
+		common.WaitUntilElementInvisible(load);
 		Actions action = new Actions(driver);
 		Thread.sleep(5000);
 		SourceStation.clear();
@@ -129,6 +133,7 @@ public class LoginPage {
 			if(sourcelist.get(i).getText().contains(source))
 			{
 				action.sendKeys(Keys.ENTER).build().perform();
+				break;
 			}
 			else
 			{
@@ -159,14 +164,14 @@ public class LoginPage {
 
 		datebox.click();
 		
-		base.WaitUntilElementVisible(Calmonth);
+		common.WaitUntilElementVisible(Calmonth);
 		
 		while(!Calmonth.getText().equalsIgnoreCase(month))
 		{
 			System.out.println("In While loop");
 			System.out.println("User Want "+month+" You present in "+Calmonth.getText());
 			rightshift.click();
-			base.WaitUntilElementVisible(Calmonth);
+			common.WaitUntilElementVisible(Calmonth);
 			
 		}
 		
@@ -188,7 +193,7 @@ public class LoginPage {
 		
 		coatch.click();
 		
-		base.WaitUntilElementVisible(classbox);
+		common.WaitUntilElementVisible(classbox);
 		
 		for(int i=0;i<listofClass.size();i++)
 		{
