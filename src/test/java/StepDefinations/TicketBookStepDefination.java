@@ -40,7 +40,7 @@ public class TicketBookStepDefination {
     	//driver = base.getDriver();
     	//System.out.println("Recive Drive "+driver);
 
-    	this.login = new LoginPage(textcontext.driver);
+    	this.login = textcontext.objmanager.getLogInPageObject();
     	System.out.println("I am from userIsOnLoginPage() "+textcontext.driver);
     	login.launchBrowser();
     	
@@ -79,10 +79,15 @@ public class TicketBookStepDefination {
     	
     }
 
+    public String supplyPassengersClass()
+    {
+    	return tainclass;
+    }
+
     @When("Book {string} Ticket for your journey")
     public void book_ticket_for_your_journey(String train1) throws Exception {
         
-    	train = new TrainListForDate(textcontext.driver);
+    	train = textcontext.objmanager.getTrainListObject();
         int train1Sit = train.findTrain(train1);
         int index = train.choose_Sit_If_Available(train1Sit,tainclass);
         if(index>=0)
@@ -96,11 +101,10 @@ public class TicketBookStepDefination {
         
         
     }
-    
     @When("Compare Train {string} and {string} where ticket is available")
     public void compare_train_and_where_ticket_is_available(String train1, String train2) 
     {
-    	train = new TrainListForDate(textcontext.driver);
+    	train = textcontext.objmanager.getTrainListObject();
         int train1Sit = train.findTrain(train1);
         int train2Sit = train.findTrain(train2);
         
@@ -130,7 +134,7 @@ public class TicketBookStepDefination {
         
         
 
-        bookcnf = new BookingConfirmation(textcontext.driver);
+        bookcnf = textcontext.objmanager.getBookConfirmationObject();
         
         bookcnf.selectPassengersDetails(passengerNames);
         bookcnf.submitPassengerDetails();
