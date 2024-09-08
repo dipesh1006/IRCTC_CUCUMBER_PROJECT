@@ -12,10 +12,15 @@ import io.cucumber.testng.CucumberOptions;
 	    plugin = {"html:test-output/HtmlReport/CucumberReport.html",
 	    		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	    			"rerun:target/FailedTestcases.txt"},
-	    tags="@Smoketest"
+	    tags="@Smoketest or @Regressiontest"
 	)
 public class TestRunner extends AbstractTestNGCucumberTests {
 
+	  	@Override
+	    @DataProvider(parallel = true)
+	    public Object[][] scenarios() {
+	        return super.scenarios();
+	    }
 	
 }
 
