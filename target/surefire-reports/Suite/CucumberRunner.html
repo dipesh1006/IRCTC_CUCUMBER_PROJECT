@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CucumberRunner</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 14 17:12:04 IST 2024</td>
+<td>Started on:</td><td>Wed Sep 18 23:00:03 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>123 seconds (123080 ms)</td>
+<tr><td>Total time:</td><td>119 seconds (119804 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,160 +76,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='RunnerPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: RunnerPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Website after target one special train"</td>
-<td><div><pre>java.lang.Exception: Train is Not Available
-	at POMClasses.TrainListForDate.choose_Sit_If_Available(TrainListForDate.java:120)
-	at StepDefinations.TicketBookStepDefination.book_ticket_for_your_journey(TicketBookStepDefination.java:92)
-	at ✽.Book &quot;SHRAMJEEVI EXP&quot; Ticket for your journey(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace808897315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace808897315'><pre>java.lang.Exception: Train is Not Available
-	at POMClasses.TrainListForDate.choose_Sit_If_Available(TrainListForDate.java:120)
-	at StepDefinations.TicketBookStepDefination.book_ticket_for_your_journey(TicketBookStepDefination.java:92)
-	at ✽.Book &quot;SHRAMJEEVI EXP&quot; Ticket for your journey(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:8)
-</pre></div></td>
-<td>57</td>
-<td>RunnerPack.TestRunner@dd05255</td></tr>
-<tr>
-<td title='RunnerPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: RunnerPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Website after target one special train"</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e5d8356792be03a9e673951deaf64559, findElement {value=//div[@id=&apos;loader&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59883/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e5d8356792be03a9e673951deaf64559
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.ExpectedConditions$48.toString(ExpectedConditions.java:1367)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
-	at GenericUtils.CommonlyUsedFunc.WaitUntilElementInvisible(CommonlyUsedFunc.java:48)
-	at POMClasses.LoginPage.launchBrowser(LoginPage.java:98)
-	at StepDefinations.TicketBookStepDefination.userIsOnLoginPage(TicketBookStepDefination.java:45)
-	at ✽.User is present in IRCTC Website(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:5)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292036270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace292036270'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e5d8356792be03a9e673951deaf64559, findElement {value=//div[@id=&apos;loader&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59883/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e5d8356792be03a9e673951deaf64559
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.ExpectedConditions$48.toString(ExpectedConditions.java:1367)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
-	at GenericUtils.CommonlyUsedFunc.WaitUntilElementInvisible(CommonlyUsedFunc.java:48)
-	at POMClasses.LoginPage.launchBrowser(LoginPage.java:98)
-	at StepDefinations.TicketBookStepDefination.userIsOnLoginPage(TicketBookStepDefination.java:45)
-	at ✽.User is present in IRCTC Website(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:5)
-</pre></div></td>
-<td>63</td>
-<td>RunnerPack.TestRunner@dd05255</td></tr>
-<tr>
-<td title='RunnerPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: RunnerPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Website after target one special train"</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f799b080e1f95a93dbb79a61acfd90fd, findElement {value=//div[@id=&apos;loader&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59890}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59890/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f799b080e1f95a93dbb79a61acfd90fd
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.ExpectedConditions$48.toString(ExpectedConditions.java:1367)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
-	at GenericUtils.CommonlyUsedFunc.WaitUntilElementInvisible(CommonlyUsedFunc.java:48)
-	at POMClasses.LoginPage.launchBrowser(LoginPage.java:98)
-	at StepDefinations.TicketBookStepDefination.userIsOnLoginPage(TicketBookStepDefination.java:45)
-	at ✽.User is present in IRCTC Website(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:5)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1039703154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1039703154'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f799b080e1f95a93dbb79a61acfd90fd, findElement {value=//div[@id=&apos;loader&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59890}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59890/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f799b080e1f95a93dbb79a61acfd90fd
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.ExpectedConditions$48.toString(ExpectedConditions.java:1367)
-	at java.base/java.lang.String.valueOf(String.java:4465)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
-	at GenericUtils.CommonlyUsedFunc.WaitUntilElementInvisible(CommonlyUsedFunc.java:48)
-	at POMClasses.LoginPage.launchBrowser(LoginPage.java:98)
-	at StepDefinations.TicketBookStepDefination.userIsOnLoginPage(TicketBookStepDefination.java:45)
-	at ✽.User is present in IRCTC Website(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:5)
-</pre></div></td>
-<td>63</td>
+<td title='RunnerPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: RunnerPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Website for Tatkal"</td>
+<td></td>
+<td>118</td>
 <td>RunnerPack.TestRunner@dd05255</td></tr>
 </table><p>
 </body>

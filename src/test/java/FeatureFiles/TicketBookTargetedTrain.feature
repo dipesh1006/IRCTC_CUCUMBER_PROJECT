@@ -13,7 +13,7 @@ Feature: Train Ticket Book from IRCTC Website after target one special train
     Then Make the Payment and Confirm ticket book
 
     Examples: 
-      | username      | password   | Source   | Destination | class | date              | Train1         |
-      | dipesh1006pal | Namita@123 | HWH      | NDLS        | 3A    | 19-September-2024 | POORVA EXPRESS |
-      | dipesh1006pal | Namita@123 | BPL      | HWH         | 2A    | 18-September-2024 | BPL HWH EXP    |
-      | dipesh1006pal | Namita@123 | PATNA JN | NDLS        | SL    | 18-September-2024 | SHRAMJEEVI EXP |
+      | username      | password   | Source   | Destination | class | date             | Train1         |
+      | dipesh1006pal | Namita@123 | HWH      | NDLS        | 3A    | 4-December-2024  | POORVA EXPRESS |
+      | dipesh1006pal | Namita@123 | BPL      | HWH         | 2A    | 27-November-2024 | BPL HWH EXP    |
+      | dipesh1006pal | Namita@123 | PATNA JN | NDLS        | SL    | 4-December-2024  | SHRAMJEEVI EXP |
