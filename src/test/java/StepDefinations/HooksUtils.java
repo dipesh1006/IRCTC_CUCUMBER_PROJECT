@@ -36,17 +36,18 @@ public class HooksUtils {
 			File takess = pic.getScreenshotAs(OutputType.FILE);
 			byte[] data = FileUtils.readFileToByteArray(takess);
 			scenario.attach(data, "image/png", "failstep");
+			textcontext.driver.close();
 			
 		}
 	}
 	
-	/*@After
+	@After
 	public void Close_Browser()
 	{
 		
 		textcontext.driver.close();
       
-	}*/
+	}
 	
 	
 }
