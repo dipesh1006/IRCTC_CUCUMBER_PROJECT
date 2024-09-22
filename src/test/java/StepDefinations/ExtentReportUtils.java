@@ -27,10 +27,10 @@ import io.cucumber.java.Scenario;
 public class ExtentReportUtils {
 	
 	
-	private static TextContextObject textcontext;
+	private TextContextObject textcontext;
 	private static ExtentReports extentReport;
-	private Throwable scenarioException;
-	private static ExtentTest extenttest;
+	private ExtentTest extenttest;
+	private static int Counter=0;
 	public ExtentReportUtils(TextContextObject textcontext)
 	{
 		this.textcontext = textcontext;
@@ -78,8 +78,8 @@ public class ExtentReportUtils {
 				
 			}
 			textcontext.driver.close();
-			
 		}
+		
 	}
 	
 	@AfterStep
@@ -104,14 +104,17 @@ public class ExtentReportUtils {
 	@AfterAll
 	public static void teardown()
 	{
-		extentReport.flush();
+		
+			extentReport.flush();
+		
 	}
 	
-	public static String takeScreenShot() throws Exception
+	public String takeScreenShot() throws Exception
 	{
+		Counter++;
 		TakesScreenshot ss = (TakesScreenshot)textcontext.driver;
 		File source = ss.getScreenshotAs(OutputType.FILE);
-		File destination = new File("./Reports/ScreenShots/FailStep.jpg");
+		File destination = new File("./Reports/ScreenShots/FailStep"+Counter+""+".jpg");
 		FileUtils.copyFile(source, destination);
 		return destination.getAbsolutePath();
 		

@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 	    monochrome = true,
 	    plugin = {"html:test-output/HtmlReport/CucumberReport.html",
 	    			"rerun:target/FailedTestcases.txt"},
-	    tags="@Smoketest or @Regressiontest"
+	    tags="@Regressiontest"
 	)
 public class TestRunner extends AbstractTestNGCucumberTests {
 

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 6 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,26 +104,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="RunnerPack.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;End to End Ticket booking from IRCTC Website one special train&quot;, &quot;Train Ticket Book from IRCTC Webs...)">runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RunnerPack.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;End to End Ticket booking from IRCTC Website&quot;, &quot;Train Ticket Book from IRCTC Website&quot;)">runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RunnerPack.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;End to End Ticket booking from IRCTC Website&quot;, &quot;Train Ticket Book from IRCTC Website&quot;)">runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RunnerPack.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;End to End Ticket booking from IRCTC Website one special train&quot;, &quot;Train Ticket Book from IRCTC Webs...)">runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RunnerPack.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;End to End Ticket booking from IRCTC Website&quot;, &quot;Train Ticket Book from IRCTC Website&quot;)">runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -155,93 +135,7 @@
                   </a> <!-- runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("End to End Ticket booking from IRCTC Website one special train","Train Ticket Book from IRCTC Website after target one special train")</span>
-                  <div class="stack-trace">java.lang.Exception: Train is Not Available
-	at POMClasses.TrainListForDate.choose_Sit_If_Available(TrainListForDate.java:120)
-	at StepDefinations.TicketBookStepDefination.book_ticket_for_your_journey(TicketBookStepDefination.java:92)
-	at ✽.Book &quot;BPL HWH EXP&quot; Ticket for your journey(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:8)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;End to End Ticket booking from IRCTC Website&quot;, &quot;Train Ticket Book from IRCTC Website&quot;)">
-                  </a> <!-- runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("End to End Ticket booking from IRCTC Website","Train Ticket Book from IRCTC Website")</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; class=&quot;ng-tns-c58-10 ui-inputtext ui-widget ui-state-default ui-corner-all ng-star-inserted&quot; placeholder=&quot;&quot;&gt; is not clickable at point (605, 310). Other element would receive the click: &lt;div class=&quot;ng-tns-c19-13 ui-dialog-content ui-widget-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4440a9fc41d1b0d6c4128b6140f5ae24, clickElement {id=f.9028C7C1F970227095717CE93EEF204C.d.AE7BFB53DD473B632E113D3202238491.e.2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\HOME\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50958}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50958/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4440a9fc41d1b0d6c4128b6140f5ae24)] -&gt; xpath: //span[@class=&apos;ng-tns-c58-10 ui-calendar&apos;] / input]
-Session ID: 4440a9fc41d1b0d6c4128b6140f5ae24
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at POMClasses.LoginPage.selectDate(LoginPage.java:165)
-	at StepDefinations.TicketBookStepDefination.purchaseTicketFromToOn(TicketBookStepDefination.java:75)
-	at ✽.Purchase Ticket from &quot;SHALIMAR&quot; to &quot;BALESHWAR&quot; on &quot;15-October-2024&quot; and class &quot;2A&quot;(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBook.feature:7)
-... Removed 5 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;End to End Ticket booking from IRCTC Website&quot;, &quot;Train Ticket Book from IRCTC Website&quot;)">
-                  </a> <!-- runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("End to End Ticket booking from IRCTC Website","Train Ticket Book from IRCTC Website")</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; class=&quot;ng-tns-c58-10 ui-inputtext ui-widget ui-state-default ui-corner-all ng-star-inserted&quot; placeholder=&quot;&quot;&gt; is not clickable at point (605, 310). Other element would receive the click: &lt;div class=&quot;ng-tns-c19-13 ui-dialog-content ui-widget-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2beb95e03c0e896d92a251682178679f, clickElement {id=f.4B2A8996FFA3980E0E8C6F0E8498EA4C.d.74BED9972670F067DE654B23BF0A940C.e.2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\HOME\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50806/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2beb95e03c0e896d92a251682178679f)] -&gt; xpath: //span[@class=&apos;ng-tns-c58-10 ui-calendar&apos;] / input]
-Session ID: 2beb95e03c0e896d92a251682178679f
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at POMClasses.LoginPage.selectDate(LoginPage.java:165)
-	at StepDefinations.TicketBookStepDefination.purchaseTicketFromToOn(TicketBookStepDefination.java:75)
-	at ✽.Purchase Ticket from &quot;HWH&quot; to &quot;NDLS&quot; on &quot;19-September-2024&quot; and class &quot;SL&quot;(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBook.feature:7)
-... Removed 5 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;End to End Ticket booking from IRCTC Website one special train&quot;, &quot;Train Ticket Book from IRCTC Webs...)">
-                  </a> <!-- runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("End to End Ticket booking from IRCTC Website one special train","Train Ticket Book from IRCTC Website after target one special train")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button/span[contains(text(),&apos;Show Available Trains&apos;)]&apos; (tried for 40 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button/span[contains(text(),&apos;Show Available Trains&apos;)]&apos; (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at GenericUtils.CommonlyUsedFunc.WaitUntilElementVisible(CommonlyUsedFunc.java:41)
@@ -249,14 +143,14 @@ Session ID: 2beb95e03c0e896d92a251682178679f
 	at StepDefinations.TicketBookStepDefination.book_ticket_for_your_journey(TicketBookStepDefination.java:91)
 	at ✽.Book &quot;POORVA EXPRESS&quot; Ticket for your journey(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:8)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button/span[contains(text(),&apos;Show Available Trains&apos;)]&quot;}
-  (Session info: chrome=128.0.6613.138)
+  (Session info: chrome=128.0.6613.139)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a3bf46db700ddddcf6d84e6fb85f6507, findElement {using=xpath, value=//button/span[contains(text(),&apos;Show Available Trains&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\HOME\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51010/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a3bf46db700ddddcf6d84e6fb85f6507
+Command: [1abe1880c1b5839eed202ea283022bbb, findElement {value=//button/span[contains(text(),&apos;Show Available Trains&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\HOME\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63600/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1abe1880c1b5839eed202ea283022bbb
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -270,7 +164,7 @@ Session ID: a3bf46db700ddddcf6d84e6fb85f6507
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
@@ -283,7 +177,7 @@ Session ID: a3bf46db700ddddcf6d84e6fb85f6507
 	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
 	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
 	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
 	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
 	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
 	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
@@ -307,40 +201,26 @@ Session ID: a3bf46db700ddddcf6d84e6fb85f6507
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;End to End Ticket booking from IRCTC Website&quot;, &quot;Train Ticket Book from IRCTC Website&quot;)">
-                  </a> <!-- runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("End to End Ticket booking from IRCTC Website","Train Ticket Book from IRCTC Website")</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at POMClasses.TrainListForDate.choosTrain(TrainListForDate.java:245)
-	at StepDefinations.TicketBookStepDefination.compare_train_and_where_ticket_is_available(TicketBookStepDefination.java:121)
-	at ✽.Compare Train &quot;POORVA EXPRESS&quot; and &quot;NETAJI EXPRESS&quot; where ticket is available(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBook.feature:8)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;End to End Ticket booking from IRCTC Website one special train&quot;, &quot;Train Ticket Book from IRCTC Webs...)">
                   </a> <!-- runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("End to End Ticket booking from IRCTC Website one special train","Train Ticket Book from IRCTC Website after target one special train")</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; class=&quot;ng-tns-c58-10 ui-inputtext ui-widget ui-state-default ui-corner-all ng-star-inserted&quot; placeholder=&quot;&quot;&gt; is not clickable at point (605, 310). Other element would receive the click: &lt;div class=&quot;ng-tns-c19-13 ui-dialog-content ui-widget-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=128.0.6613.138)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button/span[contains(text(),&apos;Show Available Trains&apos;)]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at GenericUtils.CommonlyUsedFunc.WaitUntilElementVisible(CommonlyUsedFunc.java:41)
+	at POMClasses.TrainListForDate.findTrain(TrainListForDate.java:63)
+	at StepDefinations.TicketBookStepDefination.book_ticket_for_your_journey(TicketBookStepDefination.java:91)
+	at ✽.Book &quot;BPL HWH EXP&quot; Ticket for your journey(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:8)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button/span[contains(text(),&apos;Show Available Trains&apos;)]&quot;}
+  (Session info: chrome=128.0.6613.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86003c6481cf9cb356638365eb3f1682, clickElement {id=f.8B87E7DD80579D7EAA6998A7FAA5D0FB.d.8A85947BD29A584F813CFE015BC5C2CC.e.5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\HOME\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51460/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86003c6481cf9cb356638365eb3f1682)] -&gt; xpath: //span[@class=&apos;ng-tns-c58-10 ui-calendar&apos;] / input]
-Session ID: 86003c6481cf9cb356638365eb3f1682
+Command: [99a8538999e9fc3dd5db8d5e97687a97, findElement {value=//button/span[contains(text(),&apos;Show Available Trains&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\HOME\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63602}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63602/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99a8538999e9fc3dd5db8d5e97687a97
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -348,14 +228,42 @@ Session ID: 86003c6481cf9cb356638365eb3f1682
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at POMClasses.LoginPage.selectDate(LoginPage.java:165)
-	at StepDefinations.TicketBookStepDefination.purchaseTicketFromToOn(TicketBookStepDefination.java:75)
-	at ✽.Purchase Ticket from &quot;PATNA JN&quot; to &quot;NDLS&quot; on &quot;18-September-2024&quot; and class &quot;SL&quot;(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTargetedTrain.feature:7)
-... Removed 5 stack frames
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at GenericUtils.CommonlyUsedFunc.WaitUntilElementVisible(CommonlyUsedFunc.java:41)
+	at POMClasses.TrainListForDate.findTrain(TrainListForDate.java:63)
+	at StepDefinations.TicketBookStepDefination.book_ticket_for_your_journey(TicketBookStepDefination.java:91)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -423,36 +331,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'RunnerPack.TestRunner')
-data.setCell(0, 3, 114376);
+data.setCell(0, 3, 146143);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'RunnerPack.TestRunner')
-data.setCell(1, 3, 113434);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'RunnerPack.TestRunner')
-data.setCell(2, 3, 100310);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'RunnerPack.TestRunner')
-data.setCell(3, 3, 92973);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'RunnerPack.TestRunner')
-data.setCell(4, 3, 78726);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'RunnerPack.TestRunner')
-data.setCell(5, 3, 72982);
+data.setCell(1, 3, 132028);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -480,48 +372,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">RunnerPack.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@4c59e45e)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@67207d8a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website")</span>
-                <span class="method-start">1264 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website")</span>
-                <span class="method-start">1264 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("End to End Ticket booking from IRCTC Website", "Train Ticket Book from IRCTC Website")</span>
-                <span class="method-start">94253 ms</span>
+                <span class="method-name">runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...)</span>
+                <span class="method-start">1259 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...)</span>
-                <span class="method-start">115642 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...)</span>
-                <span class="method-start">167241 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Webs...)</span>
-                <span class="method-start">215958 ms</span>
+                <span class="method-start">1259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">329473 ms</span>
+                <span class="method-start">147412 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

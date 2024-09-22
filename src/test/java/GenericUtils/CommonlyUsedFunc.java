@@ -36,21 +36,21 @@ public class CommonlyUsedFunc {
 	
 	public void WaitUntilElementVisible(WebElement e)
 	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		System.out.println("We are in Wait for Element Visibility");
 		wait.until(ExpectedConditions.visibilityOf(e));
 	}
 	
 	public void WaitUntilElementInvisible(WebElement e)
 	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		System.out.println("We are in Loader");
 		wait.until(ExpectedConditions.invisibilityOf(e));
 	}
 	
 	public void WaitUntilUrlGet(String url)
 	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		System.out.println("We are in URL");
 		wait.until(ExpectedConditions.urlContains(url));
 	}
