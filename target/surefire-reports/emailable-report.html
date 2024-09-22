@@ -9,10 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">CucumberRunner</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">119,804</td><td></td><td></td></tr>
+<tr><td><a href="#t0">CucumberRunner</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">131,873</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CucumberRunner &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">RunnerPack.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1726680604831</td><td rowspan="1">118044</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CucumberRunner &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">RunnerPack.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1726997271889</td><td rowspan="1">130521</td></tr></tbody>
 </table>
-<h2>CucumberRunner</h2><h3 id="m0">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website one special train&quot;</td><td>&quot;Train Ticket Book from IRCTC Website for Tatkal&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CucumberRunner</h2><h3 id="m0">RunnerPack.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;End to End Ticket booking from IRCTC Website for Tatkal&quot;</td><td>&quot;Train Ticket Book from IRCTC Website for Tatkal&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;reviewBooking&quot;. Current url: &quot;https://www.irctc.co.in/nget/booking/psgninput&quot; (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51944/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13694e4cc48fd2d5e44b096fc98a6503
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at GenericUtils.CommonlyUsedFunc.WaitUntilUrlGet(CommonlyUsedFunc.java:55)
+	at POMClasses.BookingConfirmation.reviewAndSubmit(BookingConfirmation.java:118)
+	at StepDefinations.TicketBookStepDefination.makeThePaymentAndConfirmTicketBook(TicketBookStepDefination.java:149)
+	at ✽.Make the Payment and Confirm ticket book(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTatKal.feature:11)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

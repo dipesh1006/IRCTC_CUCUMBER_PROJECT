@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 120.5 s -- in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 132.5 s <<< FAILURE! -- in TestSuite
+RunnerPack.TestRunner.runScenario["End to End Ticket booking from IRCTC Website for Tatkal", "Train Ticket Book from IRCTC Website for Tatkal"](1) -- Time elapsed: 130.5 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for url to contain "reviewBooking". Current url: "https://www.irctc.co.in/nget/booking/psgninput" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51944/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13694e4cc48fd2d5e44b096fc98a6503
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at GenericUtils.CommonlyUsedFunc.WaitUntilUrlGet(CommonlyUsedFunc.java:55)
+	at POMClasses.BookingConfirmation.reviewAndSubmit(BookingConfirmation.java:118)
+	at StepDefinations.TicketBookStepDefination.makeThePaymentAndConfirmTicketBook(TicketBookStepDefination.java:149)
+	at ✽.Make the Payment and Confirm ticket book(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTatKal.feature:11)
+

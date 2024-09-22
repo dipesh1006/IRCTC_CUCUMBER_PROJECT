@@ -4,7 +4,6 @@ POMClasses\BookingConfirmation.class
 GenericUtils\CommonlyUsedFunc.class
 RunnerPack\FailedTestRunner.class
 RunnerPack\TestRunner.class
-StepDefinations\HooksUtils.class
 ProjectManagers\TextContextObject.class
 RunnerPack\BaseClass.class
 POMClasses\LoginPage.class

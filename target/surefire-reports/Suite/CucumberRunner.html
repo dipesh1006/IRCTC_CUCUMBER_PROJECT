@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CucumberRunner</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 18 23:00:03 IST 2024</td>
+<td>Started on:</td><td>Sun Sep 22 14:57:50 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>119 seconds (119804 ms)</td>
+<tr><td>Total time:</td><td>131 seconds (131873 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,10 +76,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='RunnerPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: RunnerPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End Ticket booking from IRCTC Website one special train", "Train Ticket Book from IRCTC Website for Tatkal"</td>
-<td></td>
-<td>118</td>
-<td>RunnerPack.TestRunner@dd05255</td></tr>
+<td title='RunnerPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: RunnerPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "End to End Ticket booking from IRCTC Website for Tatkal", "Train Ticket Book from IRCTC Website for Tatkal"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;reviewBooking&quot;. Current url: &quot;https://www.irctc.co.in/nget/booking/psgninput&quot; (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51944/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13694e4cc48fd2d5e44b096fc98a6503
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at GenericUtils.CommonlyUsedFunc.WaitUntilUrlGet(CommonlyUsedFunc.java:55)
+	at POMClasses.BookingConfirmation.reviewAndSubmit(BookingConfirmation.java:118)
+	at StepDefinations.TicketBookStepDefination.makeThePaymentAndConfirmTicketBook(TicketBookStepDefination.java:149)
+	at ✽.Make the Payment and Confirm ticket book(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTatKal.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1084221455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1084221455'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;reviewBooking&quot;. Current url: &quot;https://www.irctc.co.in/nget/booking/psgninput&quot; (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51944/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13694e4cc48fd2d5e44b096fc98a6503
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at GenericUtils.CommonlyUsedFunc.WaitUntilUrlGet(CommonlyUsedFunc.java:55)
+	at POMClasses.BookingConfirmation.reviewAndSubmit(BookingConfirmation.java:118)
+	at StepDefinations.TicketBookStepDefination.makeThePaymentAndConfirmTicketBook(TicketBookStepDefination.java:149)
+	at ✽.Make the Payment and Confirm ticket book(file:///E:/EclipsWorkSpace/IRCTC_CUCUMBER_PROJECT/src/test/java/FeatureFiles/TicketBookTatKal.feature:11)
+</pre></div></td>
+<td>130</td>
+<td>RunnerPack.TestRunner@397fbdb</td></tr>
 </table><p>
 </body>
 </html>
